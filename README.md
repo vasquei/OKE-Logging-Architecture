@@ -94,16 +94,21 @@ Ensure you have sufficient Kubernetes privileges to create DaemonSets, Services,
 
 You may also use Helm charts for simpler installation, example for elasticsearch and kibana.
 
+```
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm repo update
 
+```
 **Installing Elasticsearch**
 
+```
 helm install elasticsearch --set name=elasticsearch,master.replicas=3,service.type=LoadBalancer bitnami/elasticsearch
-
+```
 
 **Installing Kibana**
+```
 helm install -kibana elastic/kibana --set  name=elasticsearchHosts=http://<ELASTICSEARCH_IP>:9200,service.type=LoadBalancer
+```
 ---
 
 
@@ -154,6 +159,7 @@ It defines:
 
 - Elasticsearch destination
 
+```
 <source>
   @type tail
   path /var/log/containers/*.log
@@ -161,6 +167,7 @@ It defines:
   tag kubernetes.*
   format json
 </source>
+```
 
 ![fluentid-configmap](images/configmap-fluentid.png)
 
