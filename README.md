@@ -84,9 +84,6 @@ Typical Kubernetes manifests:
 
 - fluentdRBAC.yaml
 
-- elasticsearch.yaml
-
-- kibana.yaml
 
 
 Ensure you have sufficient Kubernetes privileges to create DaemonSets, Services, ConfigMaps, and RBAC resources.
