@@ -20,7 +20,7 @@ Oracle Cloud Infrastructure (OCI) is not responsible for these open-source deplo
 
 ## Architecture Overview
 
-![architecture] (images/architecture.png)
+![architecture](images/architecture.png)
 
 
 ---
