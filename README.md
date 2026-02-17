@@ -29,7 +29,6 @@ Oracle Cloud Infrastructure (OCI) is not responsible for these open-source deplo
 
 Instead of self-managing Elasticsearch, customers may use:
 
-- Fluentd or Fluent Bit 
 - OCI OpenSearch Service (managed by Oracle)
 
 Example reference:  
